@@ -1,0 +1,3 @@
+/run/media/darkdevilxy/Data_C/c++/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
+/run/media/darkdevilxy/Data_C/c++/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/run/media/darkdevilxy/Data_C/c++/untitled/cmake-build-debug/CMakeFiles/untitled.dir
