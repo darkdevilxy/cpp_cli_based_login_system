@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <sstream>
 using namespace std;
 
 void show_menu();
@@ -121,18 +122,21 @@ void edit_mode(string user_data)
 
         string user_data_input = "user_file";
         string dummy_data;
-        string read_data;
+        stringstream read_data;
         cout<<"Start typing"<<endl;
 
         while (user_data_input != ":close") {
+
+            if(user_data_input == ":close"){
+                system("clear");
+                while(user_file >> read_data.rdbuf())
+                    cout<< read_data.str() <<endl;
+            }
+
          cin>>dummy_data;
          user_data_input = dummy_data;
          user_file << user_data_input << endl;
 
-         if(user_data_input == ":close"){
-             while(getline(user_file, read_data))
-                 cout<<read_data<<endl;
-         }
 
         }
 
@@ -142,11 +146,11 @@ user_file.close();
 
 void view_mode(string user_data)
 {
-    string read_data;
+    stringstream read_data;
     ifstream user_file("./user" + user_data);
 
-    while(getline(user_file, read_data )){
-         cout << read_data<<endl;
+    while(user_file >>read_data.rdbuf()){
+         cout << read_data.str() <<endl;
        }
     user_file.close();
 }

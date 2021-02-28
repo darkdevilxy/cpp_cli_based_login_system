@@ -1,0 +1,3 @@
+/run/media/darkdevilxy/Data_C/c++/untitled/CMakeFiles/edit_cache.dir
+/run/media/darkdevilxy/Data_C/c++/untitled/CMakeFiles/rebuild_cache.dir
+/run/media/darkdevilxy/Data_C/c++/untitled/CMakeFiles/untitled.dir
